@@ -3,6 +3,9 @@
 * {
     margin: 0px;
     font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 :root {
@@ -19,11 +22,12 @@
 /* Encabezado */
 
 header {
-    height: 100px;
+    height: 35%;
     background-color: var(--secondary-bg-color);
     display: flex;
     justify-content: space-between;
-    padding: 0% 3%;
+    align-items: flex-end;
+    padding: 1% 3%;
 }
 
 .logo {
@@ -35,52 +39,71 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0;
+    width: 30%;
+
 }
+
+
 
 .nav_button {
     border: transparent;
     background: transparent;
     color: var(--secondary-text-color);
-    font-size: 24px;
-    padding: 3px 40px 3px 40px;
-    border-radius: 16px;
+    font-size: 20px;
+    /*border-radius: 16px;*/
 }
 
 .nav_button:hover {
-    background: var(--button-hoover-color)
+    color: var(--button-hoover-color)
 }
 
 /* Sección principal landing page */
 
+
 main {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 70vh;
 }
 
+.flex-container {
+    /*border: black 1px solid;*/
+    display: flex;
+    margin: 0 auto;
+    align-content: baseline;
+    justify-items: space-between;
+    width: 65%;
+    height: 100%;
+    gap: 9%;
+    padding: 2%;
+
+}
+
+
+
 .imagen_principal {
+    margin-top: 5%;
     background: var(--secondary-bg-color);
-    width: 40%;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     border-radius: 50% 0% 50% 50%;
 }
 
 .imagen_principal img {
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
     border-radius: 90%;
     margin-left: 15px;
     margin-top: 12px;
 }
 
 .texto {
-    width: 40%;
+    width: 45%;
 }
 
 .titulo {
-    margin-top: 90px;
-    font-size: 85px;
+    margin-top: 70px;
+    font-size: 65px;
     color: var(--secondary-bg-color);
     line-height: .8;
 }
@@ -98,7 +121,7 @@ main {
     color: var(--secondary-text-color);
     font-size: 20px;
     font-weight: 700;
-    padding: 20px 35px;
+    padding: 8px 20px;
     position: absolute;
     margin-top: 23px;
 }
@@ -119,8 +142,8 @@ main {
 }
 
 .linkedin-coder {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-top: 25px;
     margin-right: 15px;
 }
@@ -140,47 +163,59 @@ main {
 /* Pie de página */
 
 footer {
-    display: grid;
+    padding: 2%;
+    display: flex;
     background: var(--secondary-bg-color);
-    grid-template-columns: repeat(5, 20%)
+    /*grid-template-columns: repeat(5, 20%);*/
+    justify-content: space-around;
 }
 
 .coder {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    display:grid;
+    /* Centra horizontalmente los elementos dentro del grid */
+    align-content: center; /* Centra verticalmente el contenido del grid */
     color: var(--secondary-text-color);
-    margin: 70px 0px;
+    
 }
 
 .coder a {
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .coder p {
-    font-size: 16px;
+    font-size: 12px;
     color: var(--main-text-color);
-    margin-top: 3px;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
-.img_coder {
-    width: 100%;
-    height: 242px;
-    margin: center;
+ .img_coder {
+    
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
-}
+
+   
+}  
 
 .integrantes {
-    width: 100%;
-    padding: auto;
-    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 90%;
+    
+
 }
+
+
 
 
 .linkedin {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 a {
@@ -203,7 +238,7 @@ a {
         flex-direction: column;
         display: flex;
     }
-    
+
     .logo img {
         margin: auto;
         padding: auto;
@@ -215,10 +250,10 @@ a {
         flex-direction: column-reverse;
     }
 
-    
-    .texto{
+
+    .texto {
         width: 100%;
-        text-align:center;
+        text-align: center;
     }
 
     .titulo {
@@ -227,7 +262,7 @@ a {
         color: var(--secondary-bg-color);
         line-height: .8;
     }
-    
+
     .subtitulo {
         font-size: 20px;
         font-weight: 400;
@@ -244,23 +279,23 @@ a {
         padding: 20px 35px;
         position: relative;
         margin-top: 23px;
-        
+
     }
 
 
 
-    .imagen_principal{
+    .imagen_principal {
         width: 95%;
         height: 370px;
         margin: 70px 8px;
     }
 
-    .imagen_principal img{
+    .imagen_principal img {
         margin-top: 7px;
         margin-left: 10px;
     }
 
-    footer{
+    footer {
         display: grid;
         grid-template-columns: 100%;
     }

@@ -8,14 +8,14 @@
 
 /* Encabezado */
 
-header {
+/* header {
     height: 100px;
     background-color: #FF7F99;
     display: flex;
     justify-content: space-between;
     padding: 0% 3%
-}
-
+} */
+/* 
 .logo {
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ nav {
 
 .nav_button:hover {
     background: #FBE7B4;   
-}
+} */
 
 /* Sección principal landing page */
 
@@ -64,6 +64,8 @@ main {
 
 .texto{
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo {
@@ -86,31 +88,49 @@ main {
 }
 
 .contact{
-    margin-top: 30px;
+   display: flex;
+   flex-direction: row;
+    width: 280px;
+    height: 65px;
+    padding: 1%;
+    align-items: flex-end;
+    margin-left: -13px;
+}
+
+.icon{
     display: flex;
+    width: 30%;
+    align-items: flex-end;
 }
 
 .contact img{
-    width: 40px;
-    margin-right: 15px;
+    width:55%;
+    margin:0 auto;
 }
 
-.main_button {
-    border-radius: 40px;
-    border-style: none;
-    width:170px;
-    height: 40px;
-    background: #ffca41;
-    color: white;
-    font-size: 15px;
+.main_button_dev {
+ border-radius: 25px;
+ border-style: none;
+ background: var(--button-bg-color);
+ color: var(--secondary-text-color);
+ width:100%;
+ height: 1.5em;
+ font-size: 22px;
+ font-weight: 600;
+ text-align: center;
+
 }
+
+
+
+
 
 /* Sección principal página desarrolladores */
 
 
 /* Pie de página */
 
-footer {
+/* footer {
     display: grid;
     background: #FF7F99;
     grid-template-columns: repeat(5, 20%)
@@ -157,7 +177,7 @@ footer {
 a {
     text-decoration: none;
     color: white;    
-}
+} */
 
 
 @media (max-width: 750px) {
